@@ -1,2 +1,15 @@
-# biomonitorweb
-This package amend base biomonitoR for working with Shiny
+Package: bioshiny
+Type: shiny interface to biomonitoR
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Alex Laini
+Maintainer: Alex Laini <alex.laini@gmail.com>
+Description: This package amend base biomonitoR for working with Shiny
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.00)
+Imports: hunspell
+RoxygenNote: 7.0.2
+Roxygen: list(markdown = TRUE)
+
