@@ -8,12 +8,16 @@ suggestNamesBio <- function( x , custom = F , group = group , ... ){
   # the check of the names relies on the package hunspell
   if( custom == F ){
     if( group == "mi" ){
-      dic.path <- system.file( "dict" , "mi_dictionary.txt", package = "bioshiny" )
+      dic.path <- system.file( "dict" , "mi_dictionary.txt", package = "biomonitorweb" )
       # very important to set cache equal to FALSE, otherwise suggestNames will provide inconsistent results.
       dictio <- dictionary( dic.path, cache = F )
     }
     if( group == "mf" ){
-      dic.path <- system.file( "dict" , "mf_dictionary.txt" , package = "bioshiny" )
+      dic.path <- system.file( "dict" , "mf_dictionary.txt" , package = "biomonitorweb" )
+      dictio <- dictionary( dic.path , cache = F )
+    }
+    if( group == "fi" ){
+      dic.path <- system.file( "dict" , "fi_dictionary.txt" , package = "biomonitorweb" )
       dictio <- dictionary( dic.path , cache = F )
     }
   }
