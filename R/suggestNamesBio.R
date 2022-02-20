@@ -45,6 +45,7 @@ suggestNamesBio <- function( x , custom = F , group = group , ... ){
 
   for( i in 1:length( nameSuggest ) ){
     nameSuggest[[ i ]] <- c( wrongName[[ i ]] , nameSuggest[[ i ]]  )
+    nameSuggest[[i]] <- gsub("_", " ", unlist(nameSuggest[[i]]))
   }
 
   nameSuggest
